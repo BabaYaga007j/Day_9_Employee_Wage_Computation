@@ -5,8 +5,7 @@ public class EmployeeWageMain {
 	public static void main(String[] args) {
 		
 		IwageCopmutation computation= new ImplWageComputation();
-		computation.displayMessage();
-		computation.checkEmployeePresentOrAbsent();
+		computation.getDailyEmployeeWage();
 	}
 
 }

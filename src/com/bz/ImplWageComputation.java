@@ -2,24 +2,32 @@ package com.bz;
 
 public class ImplWageComputation implements IwageCopmutation
 {
-	public void displayMessage()
+
+	
+	
+	public void getDailyEmployeeWage()
 	{
-		System.out.println("Welcome to Employee Wage Program");
-	}
-
-	public void checkEmployeePresentOrAbsent() {
+		byte perHour = 20;
 		
-		int emp = 1;
-		int empCheck = (int) ( (Math.random() * 10 )% 2);
-		if (empCheck == emp) {
-
-			System.out.println("Employee is present");
+		int perDayTime = (int) (((Math.random())* 10 ));
+		
+		System.out.println("Working Hours :: "+perDayTime);
+		
+		if (perDayTime % 8 == 0 && perDayTime != 0) {
 			
-		} else {
+			int wage = (int) (perDayTime*perHour);
 			
-			System.out.println("Employee is absent");
-
+			System.out.println("Full day slary is :: " + wage);
+		}
+		else if (perDayTime % 4 == 0 && perDayTime != 0) {
+			
+			int wage = (int) (perDayTime*(perHour/2));
+			
+			System.out.println("Half day salary is :: " + wage);
+		}
+		else {
+			System.err.println("invalid working hours");
 		}
 	}
+	}
 		
-}
