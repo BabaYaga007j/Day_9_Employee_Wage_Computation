@@ -2,6 +2,6 @@ package com.bz;
 
 public interface IwageCopmutation {
 	
-	void getDailyEmployeeWage();
+	void addPartTimeEmployeeWage();
 
 }

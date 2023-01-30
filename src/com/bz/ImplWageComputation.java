@@ -4,30 +4,18 @@ public class ImplWageComputation implements IwageCopmutation
 {
 
 	
-	
-	public void getDailyEmployeeWage()
-	{
-		byte perHour = 20;
+	public void addPartTimeEmployeeWage() {
 		
-		int perDayTime = (int) (((Math.random())* 10 ));
-		
-		System.out.println("Working Hours :: "+perDayTime);
-		
-		if (perDayTime % 8 == 0 && perDayTime != 0) {
+			byte perHour = 20;
+			byte fullTime = 8;
+			int employee = (int) (((Math.random())* 100 ));
 			
-			int wage = (int) (perDayTime*perHour);
+			System.out.println("Employee present" + employee);
 			
-			System.out.println("Full day slary is :: " + wage);
-		}
-		else if (perDayTime % 4 == 0 && perDayTime != 0) {
-			
-			int wage = (int) (perDayTime*(perHour/2));
-			
-			System.out.println("Half day salary is :: " + wage);
-		}
-		else {
-			System.err.println("invalid working hours");
+			int wage = perHour*fullTime*employee;
+			System.out.println("Total wage perday :: " + wage);
+
 		}
 	}
-	}
+
 		
