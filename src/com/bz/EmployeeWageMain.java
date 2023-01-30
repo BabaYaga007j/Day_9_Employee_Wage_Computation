@@ -5,7 +5,11 @@ public class EmployeeWageMain {
 	public static void main(String[] args) {
 		
 		IwageCopmutation computation= new ImplWageComputation();
-		computation.calculateWage();
+		computation.getDailyEmployeeWage();
+		computation.addPartTimeEmployeeWage();
+		computation.switchCase();
+		computation.calculateMonthlyWage();
+		
 	}
 
 }
