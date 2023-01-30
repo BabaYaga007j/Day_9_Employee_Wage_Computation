@@ -2,10 +2,10 @@ package com.bz;
 
 public interface IwageCopmutation {
 	
-	void getDailyEmployeeWage();
-	void addPartTimeEmployeeWage();
-	void switchCase();
-	void calculateMonthlyWage();
+	void wageForReliance(String string, int j, int k, int l);
+	void wageForTata(String string, int j, int k, int l);
+	void wageForBirla(String string, int j, int k, int l);
+	void wageForTcs(String string, int j, int k, int l);
 	
 
 }
